@@ -1,0 +1,9 @@
+<div class ="postContainer">
+    <h4>{{DisplayItem.title}}</h4>
+    <p>{{DisplayItem.thought}}</p>
+    <div class="upvotes">
+       <p>{{DisplayItem.upvote}}</p> 
+       <button class="fas fa-thumbs-up" (click)="upvote()"></button>
+    </div>
+    <button class="fas fa-trash" (click)="EmitDelete()"></button>
+</div>

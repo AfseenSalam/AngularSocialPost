@@ -1,0 +1,8 @@
+<h1>Angular Social Post</h1>
+<button (click)="toggleForm()">New Thought</button>
+@if(showForm){
+    <app-post-form (Submitted)="submit($event)"></app-post-form>
+}
+@for (p of posts; track $index) {
+<app-single-post (Deleted)="DeletePost($event)" (Vote)="Upvote($event)" [DisplayItem]="p"></app-single-post>
+}

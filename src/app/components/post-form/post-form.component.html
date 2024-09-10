@@ -1,0 +1,6 @@
+<label for="title" class="form-label">Title:</label>
+<input type="text" class="form-control" id="title"  [(ngModel)] = "newPost.title">
+<label for="thought" class="form-label">Thought:</label>
+<textarea type="text" class="form-control" id="thought"  [(ngModel)] = "newPost.thought" required></textarea>
+
+<button (click)="EmitSubmit()" [disabled]="!newPost.title || !newPost.thought">Add Post</button>
