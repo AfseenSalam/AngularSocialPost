@@ -1,9 +1,15 @@
-<div class ="postContainer">
-    <h4>{{DisplayItem.title}}</h4>
-    <p>{{DisplayItem.thought}}</p>
-    <div class="upvotes">
-       <p>{{DisplayItem.upvote}}</p> 
-       <button class="fas fa-thumbs-up" (click)="upvote()"></button>
+<div class ="row">
+    <div class = "col-9">
+        <h4>{{DisplayItem.title}}</h4>
+        <p>{{DisplayItem.thought}}</p>
     </div>
-    <button class="fas fa-trash" (click)="EmitDelete()"></button>
+   
+    <div class="col -5">
+      
+       <button class="fas fa-thumbs-up" (click)="upvote()" >{{DisplayItem.upvote}}</button>
+    </div>
+    <div class="col-1">
+        <button class="fas fa-trash" (click)="EmitDelete()"></button>
+    </div>
+   
 </div>

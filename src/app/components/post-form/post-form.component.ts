@@ -13,12 +13,11 @@ export class PostFormComponent {
   @Output() Submitted =new EventEmitter<Post>();
   newPost:Post ={} as Post;
  
-
   EmitSubmit(){
     let result:Post = {...this.newPost};
     this.Submitted.emit(result);
     this.newPost = {} as Post;
   }
- 
+  
 
 }
